@@ -106,6 +106,5 @@ def test_predictions(X, Y, W1, b1, W2, b2):
 index = 0
 test_predictions(X_train, Y_train, W1, b1, W2, b2)
 
-
-
-  
+dev_predictions = make_predictions(X_dev, W1, b1, W2, b2)
+get_accuracy(dev_predictions, Y_dev)
